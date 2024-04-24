@@ -21,24 +21,23 @@ map Q gq
 
 " Highlight copied text
 Plug 'machakann/vim-highlightedyank'
+
 " Commentary plugin
 Plug 'tpope/vim-commentary'
 
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-"" Map \r to the Reformat Code action
-"map \r <Action>(ReformatCode)
-map <C-M-s> <Action>(SelectAllOccurrences)
+map <leader>s <Action>(SelectAllOccurrences)
 map <M-r> <Action>(RenameElement)
 map <M-j> <Action>(MoveLineDown)
 map <M-k> <Action>(MoveLineUp)
-map <M-i> <Action>(GotoImplementation)
-map <M-t> <Action>(GotoTypeImplementation)
-map <M-d> <Action>(GotoDeclaration)
-map <M-u> <Action>(FindUsages)
+map <leader>i <Action>(GotoImplementation)
+map <leader>t <Action>(GotoTypeImplementation)
+map <leader>d <Action>(GotoDeclaration)
+map <leader>u <Action>(FindUsages)
 map <M-s> <Action>(SelectNextOccurrence)
 map <M-S-s> <Action>(UnselectPreviousOccurrence)
-map <M-b> <Action>(ToggleLineBreakpoint)
+map <leader>b <Action>(ToggleLineBreakpoint)
 map <M-S-q> <Action>(CloseAllEditorsButActive)
 map <C-\> <Action>(ActivateTerminalToolWindow)
 map <M-l> <Action>(NextTab)
@@ -47,9 +46,3 @@ map <M-q> <Action>(CloseEditor)
 map <M-w> <Action>(Run)
 map <M-S-w> <Action>(Debug)
 map <M-e> <Action>(ExtractMethod)
-
-"" Map <leader>d to start debug
-"map <leader>d <Action>(Debug)
-
-"" Map \b to toggle the breakpoint on the current line
-"map \b <Action>(ToggleLineBreakpoint)
