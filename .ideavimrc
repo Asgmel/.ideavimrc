@@ -10,6 +10,7 @@
 set scrolloff=8
 set relativenumber
 set number
+let mapleader = " "
 
 " Do incremental searching.
 set incsearch
@@ -46,3 +47,4 @@ map <M-q> <Action>(CloseEditor)
 map <M-w> <Action>(Run)
 map <M-S-w> <Action>(Debug)
 map <M-e> <Action>(ExtractMethod)
+map <leader>r <Action>(ReformatCode)
